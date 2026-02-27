@@ -1,16 +1,33 @@
-# flashcards
+# 🗂 Flashcards 
 
-A new Flutter project.
+Приложение для запоминания информации с помощью карточек.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🛠 Технические особенности (The Hardcore Part)
 
-A few resources to get you started if this is your first Flutter project:
+- **Custom Animation Engine:** Нижнее навигационное меню с плавными переходами, написанное с нуля.
+- **Gesture Physics:** Кастомная реализация свайпов (Swipe Cards) через `GestureDetector` и `AnimationController`.
+- **Clean Architecture:** Проект разделен на слои для легкой масштабируемости:
+  - `Domain`: Чистая бизнес-логика и сущности.
+  - `Data`: Репозитории и источники данных (DataSources).
+  - `Presentation`: Вью-модели (MVVM) и кастомные виджеты.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🏗 Структура проекта (Layered Architecture)
+
+Проект придерживается строгой структуры папок:
+- **core/** — общие константы и обработка ошибок.
+- **data/** — модели данных и реализация репозиториев.
+- **domain/** — абстракции и Use Cases (бизнес-логика).
+- **presentation/** — UI слой (ViewModels, Views, Widgets).
+
+---
+
+## 🚀 Текущий статус
+- [x] Архитектура проекта (Clean Architecture)
+- [x] Кастомное анимированное Navigation Bar
+- [x] Логика свайпов карточек (Physics-based)
+- [ ] Интеграция локальной БД (Hive/Isar)
+- [ ] Система интервальных повторений
