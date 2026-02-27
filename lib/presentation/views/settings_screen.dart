@@ -10,7 +10,7 @@ class SettingsScreen extends StatelessWidget {
       appBar: AppBar(title: const Text('Настройки')),
       body: const Center(
         child: Text(
-          'Настройки приложения\n(здесь будут опции, например, смена темы)',
+          'Настройки приложения',
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 18),
         ),

@@ -89,10 +89,8 @@ class _CustomBottomAppBar extends State<CustomBottomNavigationBar>
     final isWideScreen = screenWidth > 600;
     final crossAxisCount = isWideScreen ? 2 : 1;
 
-    // Получаем высоту системной навигации
     final bottomPadding = MediaQuery.of(context).padding.bottom;
 
-    // Если отступа нет (старые Android), добавим небольшой зазор вручную (например, 10-15)
     final safeBottomPadding = bottomPadding > 0 ? bottomPadding : 15.0;
 
     return Positioned(
